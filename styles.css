@@ -40,6 +40,8 @@
             display: flex;
             justify-content: center;
             gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
         }
         nav a {
             color: white;
@@ -48,6 +50,7 @@
             font-size: 1.1rem;
             letter-spacing: 1px;
             transition: color 0.3s ease;
+            white-space: nowrap;
         }
         nav a:hover {
             color: var(--secondary-color);
@@ -642,6 +645,15 @@
             }
         }
         @media (max-width: 768px) {
+            nav {
+                padding: 10px 10px;
+            }
+            nav ul {
+                gap: 15px;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
             .header-content {
                 flex-direction: column;
                 text-align: center;
@@ -660,9 +672,9 @@
             .item-date {
                 margin-top: 5px;
             }
-            nav ul {
+            /* nav ul {
                 gap: 20px;
-            }
+            } */
             .stat-item {
                 flex: 1 1 calc(50% - 15px);
             }
